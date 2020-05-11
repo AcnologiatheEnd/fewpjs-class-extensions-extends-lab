@@ -29,17 +29,13 @@ class Triangle extends Polygon {
 }
 
 class Square extends Polygon {
-  get isValid() {
-  let truth = []
-  let arr = this
-  this.array.forEach(function(s){
-    if (s === arr.array[0]) {
-      truth.push(s)
+  if (this.sides[0] === this.sides[1] && this.sides[0] === this.sides[2] && this.sides[0] === this.sides[3]) {
+      return true
     }
-  })
-
-    if (truth.length === 4) {return true}
-    else {return false}
+    return false
   }
+
+  get area() {
+    return this.sides[0] * this.sides[0]
   }
 }
