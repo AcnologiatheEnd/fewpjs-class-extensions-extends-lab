@@ -29,7 +29,8 @@ class Triangle extends Polygon {
 }
 
 class Square extends Polygon {
-  if (this.sides[0] === this.sides[1] && this.sides[0] === this.sides[2] && this.sides[0] === this.sides[3]) {
+   get isValid() {
+    if (this.sides[0] === this.sides[1] && this.sides[0] === this.sides[2] && this.sides[0] === this.sides[3]) {
       return true
     }
     return false
