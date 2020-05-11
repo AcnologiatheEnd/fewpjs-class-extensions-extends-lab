@@ -35,7 +35,7 @@ class Square extends Polygon {
     if (s === this.array[0]) {
       truth.push(s)
     }
-  }.bind(this.array))
+  }.bind(this))
 
     if (truth.length === 4) {return true}
     else {return false}
