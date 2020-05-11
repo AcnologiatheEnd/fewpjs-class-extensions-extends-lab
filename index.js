@@ -31,8 +31,9 @@ class Triangle extends Polygon {
 class Square extends Polygon {
   get isValid() {
   let truth = []
+  let arr = this.array
   this.array.forEach(function(s){
-    if (s === this.array[0]) {
+    if (s === arrray[0]) {
       truth.push(s)
     }
   }.bind(this))
