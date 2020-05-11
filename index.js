@@ -30,8 +30,15 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
   get isValid() {
-    if (this.array.map(s => s === this.array[0])) {return true}
-    
+    truth = []
+  this.array.forEach(function(s){
+    if (s === this.array[0]) {
+      truth.push(s)
+    }
+  }.bind(this))
+
+    if (truth.length === 4) {return true}
     else {return false}
+  }
   }
 }
